@@ -1,0 +1,735 @@
+/* definicoes de cores e fontes para usar no site todo */
+:root {
+    --cor-principal: #c9ba47;
+    /* amarelo mais claro */
+    --cor-secundaria: #a67d34;
+    /* amarelo/castanho mais escuro */
+    --cor-escura: #252137;
+    /* roxo muito escuro quase preto */
+    --cor-texto: #333333;
+    --cor-fundo: #ffffff;
+}
+
+/* tirar as margens padrao do browser e adicionar scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo geral do corpo do site */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--cor-texto);
+    line-height: 1.6;
+    background-color: var(--cor-fundo);
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* classe para centrar tudo na pagina */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* formatacao do cabecalho */
+header {
+    background-color: var(--cor-fundo);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    height: 40px;
+}
+
+/* menu de navegacao */
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    font-weight: 700;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--cor-secundaria);
+}
+
+/* estilo dos botoes */
+.btn {
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+}
+
+.btn-grande {
+    padding: 15px 35px;
+    font-size: 1.2em;
+    display: inline-block;
+    margin-top: 25px;
+}
+
+/* secao principal com imagem de fundo (hero) */
+.hero {
+    background-color: var(--cor-escura);
+    color: var(--cor-fundo);
+    padding: 80px 0;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 2.8em;
+    margin-bottom: 20px;
+    color: var(--cor-principal);
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero-imagem {
+    flex: 1;
+}
+
+.hero-imagem img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* CLASSE NOVA DO VÍDEO AQUI */
+.video-telemovel {
+    width: 100%;
+    max-width: 300px; /* Limita a largura para manter a proporção de telemóvel */
+    border-radius: 20px; /* Cantos arredondados como um smartphone */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    display: block;
+    margin: 0 auto; /* Centra o vídeo no espaço dele */
+    border: 6px solid var(--cor-escura); /* Faz uma moldura a imitar o ecrã */
+}
+
+/* estilo comum para as outras seccoes */
+.seccao {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.seccao h2 {
+    font-size: 2.2em;
+    margin-bottom: 50px;
+    color: var(--cor-escura);
+}
+
+.fundo-cinza {
+    background-color: #f7f7f7;
+}
+
+/* secao sobre com imagem lado a lado */
+.sobre-container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    text-align: left;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+
+.sobre-imagem img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sobre-texto {
+    flex: 1;
+}
+
+.sobre-texto h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.sobre-texto p {
+    font-size: 1.1em;
+}
+
+/* parte dos passos de como funciona */
+
+.passos {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.passo {
+    flex: 1;
+}
+
+.numero {
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0 auto 20px auto;
+}
+
+.passo h3 {
+    margin-bottom: 15px;
+}
+
+/* cartoes das vantagens */
+.grid-vantagens {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.vantagem {
+    background-color: var(--cor-escura);
+    color: var(--cor-fundo);
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-left: 4px solid var(--cor-principal);
+    transition: transform 0.3s;
+}
+
+.vantagem:hover {
+    transform: translateY(-5px);
+}
+
+.vantagem h3 {
+    margin-bottom: 15px;
+    color: var(--cor-principal);
+}
+
+/* rodape */
+footer {
+    background-color: var(--cor-escura);
+    color: var(--cor-fundo);
+    padding: 40px 0;
+    text-align: center;
+}
+
+.logo-rodape {
+    height: 90px;
+    margin-bottom: 20px;
+
+    filter:
+        drop-shadow(1px 0px 0px white) drop-shadow(-1px 0px 0px white) drop-shadow(0px 1px 0px white) drop-shadow(0px -1px 0px white);
+}
+
+.footer-links p {
+    opacity: 0.7;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+/* regras para os telemoveis ficarem bonitos */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .passos {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding: 60px 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.2em;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .sobre-texto h2 {
+        text-align: center;
+    }
+}
+
+/* botao de voltar ao topo */
+.btn-topo {
+    display: none; /* comeca escondido */
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5em;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    transition: background-color 0.3s, transform 0.3s;
+    text-decoration: none;
+}
+
+.btn-topo:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
+    transform: translateY(-5px);
+}
+
+/* ==========================================
+   ESTILOS PARA A PÁGINA SOBRE
+   ========================================== */
+
+/* 1. Hero da Página Sobre */
+.sobre-hero {
+    background: linear-gradient(135deg, var(--cor-escura) 0%, #151124 100%);
+    color: var(--cor-fundo);
+    padding: 100px 0 80px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(201, 186, 71, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.sobre-hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: var(--cor-principal);
+    line-height: 1.2;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.sobre-hero p {
+    font-size: 1.25em;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+    font-weight: 300;
+    line-height: 1.8;
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Animação simples de fade in */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 2. Compromissos / Pilares */
+.pilares-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.pilar-card {
+    background-color: var(--cor-fundo);
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.pilar-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--cor-principal);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.pilar-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.pilar-card:hover::after {
+    transform: scaleX(1);
+}
+
+.pilar-icone {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(201, 186, 71, 0.15);
+    color: var(--cor-secundaria);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px auto;
+    transition: all 0.3s;
+}
+
+.pilar-card:hover .pilar-icone {
+    background-color: var(--cor-principal);
+    color: var(--cor-escura);
+    transform: rotate(5deg) scale(1.05);
+}
+
+.pilar-icone svg {
+    width: 30px;
+    height: 30px;
+}
+
+.pilar-card h3 {
+    font-size: 1.4em;
+    margin-bottom: 15px;
+    color: var(--cor-escura);
+}
+
+.pilar-card p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 3. A Nossa Equipa */
+.equipa-subtitulo {
+    font-size: 1.15em;
+    color: #666;
+    margin: -30px auto 50px auto;
+    max-width: 600px;
+}
+
+.equipa-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+}
+
+.membro-card {
+    background-color: var(--cor-fundo);
+    border-radius: 12px;
+    padding: 40px 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    text-align: center;
+}
+
+.membro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.membro-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cor-principal) 0%, var(--cor-secundaria) 100%);
+    color: var(--cor-escura);
+    font-size: 2em;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+    border: 4px solid #f7f7f7;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.membro-card:hover .membro-avatar {
+    transform: scale(1.05);
+    border-color: var(--cor-principal);
+}
+
+.membro-iniciais {
+    user-select: none;
+}
+
+.membro-card h3 {
+    font-size: 1.3em;
+    color: var(--cor-escura);
+    margin-bottom: 5px;
+}
+
+.membro-card .cargo {
+    display: inline-block;
+    font-size: 0.85em;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.membro-card p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.redes-sociais a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    color: var(--cor-escura);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+.redes-sociais a svg {
+    width: 18px;
+    height: 18px;
+}
+
+.redes-sociais a:hover {
+    background-color: var(--cor-escura);
+    color: var(--cor-principal);
+    transform: translateY(-3px);
+}
+
+/* 4. Cronologia / Jornada */
+.timeline {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+    padding: 0 10px;
+}
+
+/* Linha central da timeline */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 31px;
+    width: 4px;
+    background-color: rgba(201, 186, 71, 0.3);
+    border-radius: 2px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 70px;
+    text-align: left;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-ponto {
+    position: absolute;
+    left: 20px;
+    top: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: var(--cor-fundo);
+    border: 4px solid var(--cor-principal);
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.timeline-item:hover .timeline-ponto {
+    background-color: var(--cor-principal);
+    transform: scale(1.2);
+}
+
+.timeline-conteudo {
+    background-color: var(--cor-fundo);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    border-left: 4px solid var(--cor-principal);
+    transition: all 0.3s;
+}
+
+.timeline-item:hover .timeline-conteudo {
+    transform: translateX(5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-conteudo .data {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+    background-color: rgba(166, 125, 52, 0.1);
+    padding: 5px 12px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.timeline-conteudo h3 {
+    font-size: 1.3em;
+    color: var(--cor-escura);
+    margin-bottom: 10px;
+}
+
+.timeline-conteudo p {
+    font-size: 0.95em;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* 5. CTA da Página Sobre */
+.sobre-cta {
+    background: linear-gradient(135deg, #151124 0%, var(--cor-escura) 100%);
+    color: var(--cor-fundo);
+    text-align: center;
+    padding: 90px 0;
+}
+
+.sobre-cta-container h2 {
+    color: var(--cor-principal);
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.sobre-cta-container p {
+    font-size: 1.15em;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+/* Responsividade específica da página Sobre */
+@media (max-width: 768px) {
+    .sobre-hero {
+        padding: 80px 0 60px 0;
+    }
+
+    .sobre-hero h1 {
+        font-size: 2.2em;
+    }
+
+    .sobre-hero p {
+        font-size: 1.1em;
+    }
+
+    .pilares-grid, .equipa-grid {
+        gap: 30px;
+    }
+
+    .timeline::before {
+        left: 21px;
+    }
+
+    .timeline-item {
+        padding-left: 50px;
+    }
+
+    .timeline-ponto {
+        left: 10px;
+    }
+
+    .sobre-cta-container h2 {
+        font-size: 2em;
+    }
+}

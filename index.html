@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grabit - Entrega de Comida Rápida</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/Grabit_logo_solo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <a href="#inicio"><img src="assets/Grabit_logo_solo.png" alt="Logótipo Grabit" class="logo"></a>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                    <li><a href="#vantagens">Vantagens</a></li>
+                </ul>
+            </nav>
+            <a href="#descarregar" class="btn">Descarregar App</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-container">
+            <div class="hero-text">
+                <h1>A tua comida preferida à distância de um clique!</h1>
+                <p>Com a Grab!t, os teus pratos favoritos chegam a tua casa ainda quentinhos. Rápido, fácil e sem
+                    complicações.</p>
+                <a href="#descarregar" class="btn btn-grande">Pedir Agora</a>
+            </div>
+            <div class="hero-imagem">
+                <video autoplay loop muted playsinline class="video-telemovel">
+                    <source src="assets/Screenrecorder-2026-07-10-20-54-02-396.mp4" type="video/mp4">
+                    O teu browser não suporta a tag de vídeo.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="seccao">
+        <div class="container sobre-container">
+            <div class="sobre-imagem">
+                <img src="assets/delivery_bag_with_logo_and_city.png" alt="Saco de entrega Grabit">
+            </div>
+            <div class="sobre-texto">
+                <h2>Qualidade desde o restaurante até ti</h2>
+                <p>Não somos apenas mais uma aplicação. Preocupamo-nos com cada detalhe, desde o momento em que escolhes
+                    o teu
+                    prato até ele chegar às tuas mãos, num saco sustentável e quentinho.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="como-funciona" class="seccao">
+        <div class="container">
+            <h2>Como funciona?</h2>
+            <div class="passos">
+                <div class="passo">
+                    <div class="numero">1</div>
+                    <h3>Escolhe</h3>
+                    <p>Encontra os melhores restaurantes perto de ti.</p>
+                </div>
+                <div class="passo">
+                    <div class="numero">2</div>
+                    <h3>Pede</h3>
+                    <p>Faz o pedido na app de forma simples e eficaz.</p>
+                </div>
+                <div class="passo">
+                    <div class="numero">3</div>
+                    <h3>Desfruta</h3>
+                    <p>Recebe a comida em casa e bom apetite!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="vantagens" class="seccao">
+        <div class="container">
+            <h2>Porquê escolher a GRAB!T?</h2>
+            <div class="grid-vantagens">
+                <div class="vantagem">
+                    <h3>Entregas Rápidas</h3>
+                    <p>Os nossos estafetas são rápidos para que não fiques à espera da tua refeição.</p>
+                </div>
+                <div class="vantagem">
+                    <h3>Muitas Opções</h3>
+                    <p>Dezenas de restaurantes parceiros para todos os gostos e carteiras.</p>
+                </div>
+                <div class="vantagem">
+                    <h3>Seguro e Fiável</h3>
+                    <p>Pagamentos seguros e acompanhamento do pedido em tempo real na app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-logo">
+                <img src="assets/Grabit_logo_3.png" alt="Símbolo Grabit" class="logo-rodape">
+            </div>
+            <div class="footer-links">
+                <p>&copy; 2026 Grabit. Trabalho original de:</p>
+                <p>André Noronha Nº27976, Gustavo Santos Nº27964 e Filipe Lino Nº27978</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="btn-topo" class="btn-topo" title="Voltar ao topo"><img src="assets/arrow-up-svgrepo-com.svg"
+            alt="Seta para subir" height="24" width="24"></a>
+
+    <script>
+        // pequeno script para mostrar o botao apenas quando o utilizador faz scroll para baixo
+        window.onscroll = function () {
+            var botao = document.getElementById("btn-topo");
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                botao.style.display = "flex";
+            } else {
+                botao.style.display = "none";
+            }
+        };
+    </script>
+</body>
+
+</html>
